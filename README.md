@@ -1,3 +1,6 @@
+This is the original code from GitHub
+https://github.com/hitchcliff/front-end-chatjs
+
 In order to run the html with http server
 Please install the package below
 
