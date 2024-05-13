@@ -14,6 +14,14 @@ class InteractiveChatbox {
 
     const messageInput = this.chatWindow.querySelector("input[type='text']");
 
+    // Add event listener for key press on message input
+    messageInput.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        // Trigger click event on sendButton
+        this.sendButton.click();
+      }
+    });
+
     this.sendButton.addEventListener("click", () => {
       const message = messageInput.value;
       if (message.trim() !== "") {
